@@ -1,0 +1,139 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black; /* Màu nền cho video */
+  padding: 20px 0; /* Khoảng cách giữa video và các phần khác */
+}
+
+.advertisement-video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Bo tròn góc video nếu cần */
+}
+
+/*  */
+#scrollToTopBtn {
+  display: none; /* Ẩn nút ban đầu */
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn.show {
+  display: block; /* Hiển thị nút khi có lớp 'show' */
+}
+
+#scrollToTopBtn:hover {
+  background-color: #555;
+}
+
+#scrollToTopBtn svg {
+  fill: white;
+}
+
+/*  */
+#scrollToTopBtn,
+#botchatBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#scrollToTopBtn.show,
+#botchatBtn.show {
+  display: block; /* Hiển thị nút khi có lớp 'show' */
+}
+
+#scrollToTopBtn:hover,
+#botchatBtn:hover {
+  background-color: #555;
+}
+
+#scrollToTopBtn svg,
+#botchatBtn svg {
+  fill: white;
+}
+
+#botchatBtn {
+  right: 80px; /* Điều chỉnh vị trí của nút Botchat để không chồng lên nút Quay lên trên */
+}
+
+/* CSS cho chatbot */
+.chatbot {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 70px;
+  right: 30px;
+  background-color: white;
+  z-index: 100;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.message.user {
+  background-color: #e1ffc7;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,99 @@
+/* Chatbot container */
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 60px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Chatbot header */
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f30000e9;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 30px; /* Bo tròn góc */
+}
+
+.chatbot-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.chatbot-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Chat messages */
+.messages {
+  max-height: 250px; /* Chiều cao tối đa của vùng hiển thị tin nhắn */
+  overflow-y: auto; /* Cho phép cuộn khi nội dung vượt quá chiều cao */
+  padding: 10px;
+}
+
+.message {
+  margin: 89px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+  word-wrap: break-word; /* Ngắt từ khi nội dung quá dài */
+}
+
+.message.user {
+  background-color: #e1ffc7;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+button {
+  padding: 10px 18px;
+  margin-left: 8px;
+  border: none;
+  background-color: #ff0055;
+  color: rgb(224, 43, 43);
+  border-radius: 80px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #ff0055;
+}
+
+.gui {
+  padding: 10px 18px;
+  margin-left: 1px;
+  border: none;
+  background-color: #0084ff;
+  color: white;
+  border-radius: 20px; /* Bo tròn góc */
+  cursor: pointer;
+  outline: none;
+}
